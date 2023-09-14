@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label id="name-label" for="name">Name<input id="name" name="name" type="text" required
+                    placeholder="Enter your name"></label>
+        </fieldset>
+        <fieldset>
+            <label id="email-label" for="email">Email<input id="email" name="email" type="email" required
+                    placeholder="Enter your Email"></label>
+        </fieldset>
+        <fieldset>
+            <label id="number-label" for="number">Age (optional)<input id="number" name="age" type="number" min="10"
+                    max="99" placeholder="Age"></label>
+        </fieldset>
+        <fieldset>
+            <label for="role-label">Which option best describes your current role?
+                <select id="role-label" name="role" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Job</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <label>Would you recommend our website to a friend?</label>
+            <label for="definitely-label"><input id="definitely-label" type="radio" name="recommend" class="inline"
+                    value="definitely"> Definitely</label>
+            <label for="maybe-label"><input id="maybe-label" type="radio" name="recommend" class="inline" value="maybe">
+                Maybe</label>
+            <label for="notSure-label"><input id="notSure-label" type="radio" name="recommend" class="inline"
+                    value="notSure"> Not Sure</label>
+        </fieldset>
+        <fieldset>
+            <label for="feature-label">What is your favorite feature of our website?</label>
+            <select id="feature-label" name="feature" required>
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label>What would you like to see improved? (Check all that apply)</label>
+            <label for="frontEnd-label"><input id="frontEnd-label" type="checkbox" name="improvement" class="inline"
+                    value="frontEnd"> Front-end
+                Projects</input></label>
+            <label for="backEnd-label"><input id="backEnd-label" type="checkbox" name="improvement" class="inline"
+                    value="backEnd"> Back-end Projects</input></label>
+            <label for="dataVisualization-label"><input id="dataVisualization-label" type="checkbox" name="improvement"
+                    class="inline" value="dataVisualization"> Data Visualization</input></label>
+            <label for="challenges-label"><input id="challenges-label" type="checkbox" name="improvement" class="inline"
+                    value="challenges"> Challenges</input></label>
+            <label for="community-label"><input id="community-label" type="checkbox" name="improvement" class="inline"
+                    value="community"> Community</input></label>
+        </fieldset>
+        <fieldset>
+            <label for="comments-label">Any comments or suggestions?</label>
+            <textarea id="comments-label" name="comment" rows="4" cols="30"
+                placeholder="Enter your comment here..."></textarea>
+        </fieldset>
+        <fieldset>
+            <button id="submit" type="submit" class="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
